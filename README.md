@@ -224,9 +224,11 @@ Once the timer expired the following message was shown:
 ```
 
 The previous solutions, when interpreted as latitude and longitude, point to the Neelsie:
+
 <img src="images/neelsie_map.png" width="400" alt="Neelsie Map">
 
 A wifi AP was found, encrypted with WPA2:
+
 <img src="images/neelsie_wifi.png" width="400" alt="Neelsie AP">
 
 An attempt was made to capture handshake packets, and an attempt to crack the password was made. It is unclear whether this was successful, however the password was provided on the WhatsApp group by Osiris.
