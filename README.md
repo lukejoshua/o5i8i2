@@ -1,5 +1,5 @@
 ## ![](/images/logo-small-black.png) o5i8i2 Summary 
-> last modified at 10:06 17/05/2018
+> last modified at 11:29 17/05/2018
 
 ### Binary Stickers
 **First known sighting : 24 April 2018**
@@ -203,6 +203,38 @@ Finally, we run this string through [quip-quip](https://quipquip.com) and get:
 three three times now i ve been reassigned in the past nine months three times and now they re telling me i m being replaced i ve travelled to 
 every backwater country the agency sent me to established numerous bases of operations and after all my hard work i get replaced it s an 
 outrage my work
+```
+
+Selecting numbers out the plaintext gives the following:
+```text
+33932500
+```
+
+Entering 33932500 into the website reveals the next similar puzzle, which had the following solution:
+```text
+18865400
+```
+
+Entering this solution into the website presented another countdown timer.
+
+### O5I8I2SaysHackMe
+Once the timer expired the following message was shown:
+```text
+‘REMOTE WIFI DECRYPTION FAILED...ON SITE ATTACK REQUIRED...HANDSHAKES TO OCCUR EVERY 30MINS FROM 4PM TO 6PM...FILE SERVED ON 172.24.1.1’
+```
+
+The previous solutions, when interpreted as latitude and longitude, point to the Neelsie:
+
+<img src="images/neelsie_map.png" width="400" alt="Neelsie Map">
+
+A wifi AP was found, encrypted with WPA2:
+
+<img src="images/neelsie_wifi.png" width="400" alt="Neelsie AP">
+
+An attempt was made to capture handshake packets, and an attempt to crack the password was made. It is unclear whether this was successful, however the password was provided on the WhatsApp group by Osiris.
+
+```text
+ON SITE ATTACK SUCCESSFUL; PASSWORD: dictionary1234 ;
 ```
 
 <!-- MORE -->
