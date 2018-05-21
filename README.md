@@ -287,7 +287,7 @@ While waiting for the next puzzle to become active, the following summary of the
 
 
 
-###Following Osiris
+### Following Osiris
 
 <img src='images/barcode_1.jpg'>
 
