@@ -394,7 +394,7 @@ Entering '**19h00**' into the site progressed to the next puzzle
 
 Agents on the Whatsapp group received SMS activation codes which were entered into the site. The following day Agents were divided into Alpha-, Bravo- and Charlie-Team Whatsapp groups.
 
-####Translation
+#### Translation
 
 The next puzzle gave one of 5 audio clips to each of the team members.
 
@@ -412,7 +412,7 @@ Bravo:
 propershutdownprotocolwillbeinitiatedincaseofemergency
 ```
 
-####Map Slices
+#### Map Slices
 
 The next puzzle gave each agent one of 5 different images per team which were slices of a map:
 
