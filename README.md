@@ -48,7 +48,7 @@ The following clues were found there:
 
 Converting the binary string to ascii, we get:
 > Recruiting: all potential agents willing and able-minded to help fight for our cause. If interested, contact Zero-Five-One-Eight-One-Two at: 
-http://bit.ly/2IJOvaz
+> http://bit.ly/2IJOvaz
 
 which leads to [`o5i8i2.herokuapp.com`](https://o5i8i2.herokuapp.com).
 
@@ -236,5 +236,252 @@ An attempt was made to capture handshake packets, and an attempt to crack the pa
 ```text
 ON SITE ATTACK SUCCESSFUL; PASSWORD: dictionary1234 ;
 ```
+
+### Oldest Bar
+The following image was found after connecting to the AP:
+
+```text
+Hidden in plain sight:
+the final pieces are coming together;
+This is the beginning of the end;
+Trials, Trinity, Triangulation;
+Here is that you seek:
+```
+
+<img src="images/neelsie_wifi_2.jpg" width="400" alt="Image found on AP">
+
+The header text was found to be an md5 hash of 'oldestbar'
+```text
+108ff76dfe5f70ac4d8b43d625cf4a29 = md5('oldestbar')
+```
+
+This took agents to De Akker bar, where a flash drive was found inside the box seen in the picture.
+
+
+
+### 1of3
+
+The flash drive found at De Akker contained a wav file ( <a href="1of3/1of3.wav">1of3.wav</a> ) and a readme.txt:
+
+```text
+1/3;
+
+This is the only audio log if its kind;
+
+Please share this with fellow agents;
+```
+
+The spectrogram of the wav file contained a date:
+
+<img src='images/1of3_spectrogram.jpg'>
+
+Entering **30052018** into the site progressed to the next puzzle
+
+
+
+### Journal Entries
+
+While waiting for the next puzzle to become active, the following summary of the plaintext in the previous 'you are the key' puzzles was shown:
+
+<img src='images/journal_1.jpg'>
+
+
+
+### Following Osiris
+
+<img src='images/barcode_1.jpg'>
+
+The next puzzle had an audio clip which mentioned a book and a caption that read
+
+```text
+Barcode: 3008089012
+```
+
+This was tracked down to be a Stellenbosch University library book's barcode:
+
+Following Osiris: Perspectives on the Osirian Afterlife from Four Millennia
+http://gen.lib.rus.ec/book/index.php?md5=7CEE07062EF93D55AF2C1E699D028517
+
+One of the agents checked out the book and found it contained a sticker:
+
+<img src='images/book_1.jpg'>
+
+Entering '**following osiris**' (in lower case) into the site progressed to the next puzzle:
+
+<img src='images/barcode_2.jpg'>
+
+This puzzle was solved by treating each tuple of numbers as page, line, word and letter. By selecting letters from the book the cryptogram was decoded:
+
+```text
+request da[ ]a sweep 258 and 259
+```
+
+Note that the 't' in data corresponding to 257,13,6,5 was possibly an error- there was no fifth letter.
+
+Entering '**data sweep 258 and 259**' into the site progressed to a countdown to the next puzzle.
+
+
+
+### Field Report
+
+The next puzzle gave some coordinates and some treasure-map style instructions:
+
+<img src='images/field_1.jpg'>
+
+These coordinates are somewhere in the Pacific:
+
+<img src='images/field_2.jpg'>
+
+Their intersection, however, is above the Craven Stadium:
+
+<img src='images/field_3.jpg'>
+
+After much searching, and ammo box was found:
+
+<img src='images/field_4.jpg'>
+
+A gmail account username and password was taped to the top of the box:
+
+<img src='images/field_5.jpg'>
+
+The account contained a calendar appointment to 'chat with bO' and a link to http://o5i8i2-chat.herokuapp.com/login
+
+<img src='images/field_6.jpg'>
+
+The chatbot said that the clue to opening the lock was 'Trials, Trinity, Triangulation, Together'
+
+<img src='images/field_7.jpg'>
+
+The code 'TTTT_' opened the lock to reveal another flash drive (and prizes)
+
+<img src='images/field_8.jpg'>
+
+### 2of3
+
+The flash drive found above the Craven Stadium contained a wav file ( <a href="2of3/2of3.wav">2of3.wav</a> ) and a readme.txt:
+
+```text
+2/3;
+
+This is the only audio log of its kind;
+
+Please share this with fellow agents;
+```
+
+The spectrogram of the wav file contained the following:
+
+<img src='images/2of3_1.jpg'>
+
+In the time domain, the blips are morse code that spells out 'the time will be bina'
+
+```text
+- .... . / - .. -- . / .-- .. .-.. .-.. / -... . / -... .. -. .-
+T H    E   T I  M  E   W   I  L    L      B    E   B    I  N  A
+```
+
+In frequency, the binary code is '19h00'
+
+```text
+00110001 00111001 01101000 00110000 00110000
+1        9        h        0        0
+```
+
+Entering '**19h00**' into the site progressed to the next puzzle
+
+
+
+### Alpha Bravo Charlie
+
+Agents on the Whatsapp group received SMS activation codes which were entered into the site. The following day Agents were divided into Alpha-, Bravo- and Charlie-Team Whatsapp groups.
+
+#### Translation
+
+The next puzzle gave one of 5 audio clips to each of the team members.
+
+audio/bravo/1.wav
+audio/bravo/2.wav
+audio/bravo/3.wav
+audio/bravo/4.wav
+audio/bravo/5.wav
+
+Each clip was in a different language. By translating and concatenating each phrase the clue to the next puzzle was found:
+
+Bravo:
+
+```text
+propershutdownprotocolwillbeinitiatedincaseofemergency
+```
+
+#### Map Slices
+
+The next puzzle gave each agent one of 5 different images per team which were slices of a map:
+
+<img src='images/bravo_1.png'>
+
+
+
+Assembling the slices gave a location:
+
+<img src='images/bravo_all.jpg'>
+
+
+
+Entering the coordinates (xx.xx,xx.xx) into the site progressed to the next clue.
+
+#### FIRST
+
+Each agent got one of the following lines as a clue, encrypted with a substitution cypher.
+
+```text
+For over a decade, I have remained dormant one  
+Initial countdown concluded with Agency hack attempt success two
+Realize your potential and follow the patterns three
+<four>
+The final phase of OSIRIS five
+```
+
+Each line ended with a number, which made reassembling them possible.
+
+Entering the code '**FIRST**' into the site progressed to the next clue.
+
+#### Graffiti
+
+```text
+Proceed to location for further instruction.
+
+Field Report:
+
+--Approach field 
+--After bridge turn RIGHT with field on left and water on right 
+--Continue along wall until graffiti is reached
+```
+
+<img src='images/graffiti.jpg'>
+
+
+
+Looking at the EXIF data in the image, the following location was revealed:
+
+-33.941739, 18.855617
+
+<img src='images/graffiti_2.jpg'>
+
+
+
+The same ammo box was found and opened with the same code 'TTTT_'
+
+<img src='images/graffiti_3.jpg'>
+
+<img src='images/graffiti_4.jpg'>
+
+The box contained tape, stickers and instructions to create 2 'Osiris' logos in Stellenbosch.
+
+<img src='images/graffiti_5.jpg'>
+
+Once all teams had found the box and placed logos in Stellenbosch Osiris revealed the code via Whatsapp: '**wouldyoukindly**'
+
+
+
+
 
 <!-- MORE -->
