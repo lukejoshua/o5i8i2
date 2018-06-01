@@ -1,5 +1,5 @@
 ## ![](/images/logo-small-black.png) o5i8i2 Summary 
-> last modified at 11:29 17/05/2018
+> last modified at 18:00  01/06/2018
 
 ### Binary Stickers
 **First known sighting : 24 April 2018**
@@ -9,8 +9,7 @@ The o5i8i2 logo (see image below) appears above the text. All the stickers seem 
 contain exactly the same numbers. Converting the values to ascii yields the following 
 link: [`bit.ly/2IJOvaz`](http://bit.ly/2IJOvaz)
 
-<!-- ![One of the binary stickers](images/binary.png) -->
-`TODO: add image`
+<img src="images/binary.jpg" width="300">
 
 Stickers were found at:
 + CS Honours Lab
@@ -19,7 +18,10 @@ Stickers were found at:
 + Neelsie bottom floor supply cupboard (inside)
 + Engineering Building (many many many)
 
-`TODO: add links to images`
+
+
+<!-- LOCATION WEBSITE -->
+
 
 ### Location website
 The link leads to [`https://osiris-loacation.herokuapp.com`](https://osiris-loacation.herokuapp.com). 
@@ -35,6 +37,12 @@ The website contains only the o5i8i2 logo and the following text :
 Interestingly, the title of the page is "o5i8i2 says hello". This is the first time we
 encounter the name. It was not immediately obvious to me, but o5i8i2 is leet for 
 "Osiris".
+
+
+
+<!-- COORDINATES -->
+
+
 
 ### Coordinates
 The coordinates point to 
@@ -64,14 +72,24 @@ Scanning the QR code, we get a url which leads to [`o5i8i2.herokuapp.com`](https
 poster of the Joubert Street clue , `/u/RansackTheCity`, only created an account on 
 March 16 2018 - roughly one month before the challenge began. Since then, this has been
 the only post they have ever made.*
+[It was later confirmed that both posts were made by the organisers]
+
+
+
+<!-- THE O5I8I2 WEBSITE -->
+
+
 
 ### The o5i8i2 website
 We are greeted by an [audio recording](audio/?). We are then presented with 
 a modified version  of 2048. As soon as we start playing, a timer
 counts down from 2 minutes. The game is won by achieving a score 
-of 512 before the timer reaches 0.
+of 512 before the timer reaches 0. Doing so will grant you access to a [registration page](https://o5i8i2.herokuapp.com/#/register).
 
-Doing so will grant you access to a [registration page](https://o5i8i2.herokuapp.com/#/register).
+
+<!-- CRYPTOGRAPHY PUZZLE #1 -->
+
+
 
 ### Cryptography puzzle #1
 After registration, the website redirects you to a page with the following numbers:
@@ -105,9 +123,7 @@ print('\___/\_____/(_)____/  \___/  \_____/\_/         \___/     |_/      \_____
 ```
 
 This date and time alone did not lead to anything. The rest of the clue had to have
-been in the list of numbers.
-
-Decoding those required subtracting each value from 127 and converting the result to ascii:
+been in the list of numbers. Decoding those required subtracting each value from 127 and converting the result to ascii:
 
 ```javascript
 console.log(String.fromCharCode(...[
@@ -149,6 +165,12 @@ again later." and a few seconds later a different voice "Thank you".
 
 Not much happened until Friday 27 April.
 
+
+
+<!-- 000-000-000-000-000 -->
+
+
+
 ### 000-000-000-000-000
 After 12:30 on April 27, if you called any of the five numbers, they would read out a string
 of the format `000-000-123-000-000`. Each phone number gave a different answer. Here is a 
@@ -164,6 +186,12 @@ list of the answers:
 Combining these, we get `271-818-047-002-812`. After entering this into the text field on the website,
 we were taken to another page, where there was another audio file and a message saying o5i8i2 will 
 be in contact with us. The countdown was set to end at 12:00 on the afternoon of Wednesday 2 May.
+
+
+
+<!-- YOU ARE THE KEY -->
+
+
 
 ### You are the key
 When the countdown ended, the following puzzle became available:
@@ -217,19 +245,21 @@ Entering 33932500 into the website reveals the next similar puzzle, which had th
 
 Entering this solution into the website presented another countdown timer.
 
+
+
+<!-- O5I8I2SAYSHACKME -->
+
+
+
 ### O5I8I2SaysHackMe
 Once the timer expired the following message was shown:
 ```text
 ‘REMOTE WIFI DECRYPTION FAILED...ON SITE ATTACK REQUIRED...HANDSHAKES TO OCCUR EVERY 30MINS FROM 4PM TO 6PM...FILE SERVED ON 172.24.1.1’
 ```
 
-The previous solutions, when interpreted as latitude and longitude, point to the Neelsie:
+The previous solutions, when interpreted as latitude and longitude, point to the Neelsie, where a wifi AP was found, encrypted with WPA2:
 
-<img src="images/neelsie_map.png" width="400" alt="Neelsie Map">
-
-A wifi AP was found, encrypted with WPA2:
-
-<img src="images/neelsie_wifi.png" width="400" alt="Neelsie AP">
+<img src="images/neelsie_map.png" width="400" alt="Neelsie Map"> <img src="images/neelsie_wifi.png" width="400" alt="Neelsie AP">
 
 An attempt was made to capture handshake packets, and an attempt to crack the password was made. It is unclear whether this was successful, however the password was provided on the WhatsApp group by Osiris.
 
@@ -250,12 +280,12 @@ Here is that you seek:
 
 <img src="images/neelsie_wifi_2.jpg" width="400" alt="Image found on AP">
 
-The header text was found to be an md5 hash of 'oldestbar'
-```text
-108ff76dfe5f70ac4d8b43d625cf4a29 = md5('oldestbar')
-```
+The header text was found to be an md5 hash of 'oldestbar', which seemed to be where the photo was taken. This led agents to De Akker bar, where a flash drive was found inside the box seen in the picture.
 
-This took agents to De Akker bar, where a flash drive was found inside the box seen in the picture.
+
+
+
+<!-- 1OF3 -->
 
 
 
@@ -278,39 +308,41 @@ The spectrogram of the wav file contained a date:
 Entering **30052018** into the site progressed to the next puzzle
 
 
-
 ### Journal Entries
 
 While waiting for the next puzzle to become active, the following summary of the plaintext in the previous 'you are the key' puzzles was shown:
 
-<img src='images/journal_1.jpg'>
+<img src='images/journal_1.jpg' width="500">
+
+
+
+
+<!-- FOLLOWING OSIRIS -->
+
 
 
 
 ### Following Osiris
 
-<img src='images/barcode_1.jpg'>
 
-The next puzzle had an audio clip which mentioned a book and a caption that read
+The next puzzle consisted of an audio file, a caption and a text field requesting a title.
+The audio file referenced an unknown book and the caption was the following:
 
 ```text
 Barcode: 3008089012
 ```
 
-This was tracked down to be a Stellenbosch University library book's barcode:
-
-Following Osiris: Perspectives on the Osirian Afterlife from Four Millennia
-http://gen.lib.rus.ec/book/index.php?md5=7CEE07062EF93D55AF2C1E699D028517
+The barcode pointed to a book at the SU library : [Following Osiris: Perspectives on the Osirian Afterlife from Four Millennia](http://gen.lib.rus.ec/book/index.php?md5=7CEE07062EF93D55AF2C1E699D028517)
 
 One of the agents checked out the book and found it contained a sticker:
 
 <img src='images/book_1.jpg'>
 
-Entering '**following osiris**' (in lower case) into the site progressed to the next puzzle:
+Entering '**following osiris**' (in lower case) into the site progressed us to the next part of the puzzle, which turned out to be a book cipher where the key was the *Following Osiris* book. Each set of numbers pointed to a page, line, word and letter, respectively.
 
 <img src='images/barcode_2.jpg'>
 
-This puzzle was solved by treating each tuple of numbers as page, line, word and letter. By selecting letters from the book the cryptogram was decoded:
+Solving the cipher produced the following text: 
 
 ```text
 request da[ ]a sweep 258 and 259
@@ -319,6 +351,12 @@ request da[ ]a sweep 258 and 259
 Note that the 't' in data corresponding to 257,13,6,5 was possibly an error- there was no fifth letter.
 
 Entering '**data sweep 258 and 259**' into the site progressed to a countdown to the next puzzle.
+
+
+
+
+<!-- FIELD REPORT -->
+
 
 
 
@@ -388,11 +426,9 @@ In frequency, the binary code is '19h00'
 
 Entering '**19h00**' into the site progressed to the next puzzle
 
-
-
 ### Alpha Bravo Charlie
 
-Agents on the Whatsapp group received SMS activation codes which were entered into the site. The following day Agents were divided into Alpha-, Bravo- and Charlie-Team Whatsapp groups.
+Agents on the Whatsapp group received SMS activation codes which were entered into the site. The following day Agents were divided into Alpha-, Bravo- and Charlie-Team Whatsapp groups. Each team received the same three challenges, but in different orders.
 
 #### Translation
 
@@ -456,32 +492,17 @@ Field Report:
 --Continue along wall until graffiti is reached
 ```
 
-<img src='images/graffiti.jpg'>
+<img src='images/graffiti.jpg' width="300">
 
+Looking at the EXIF data in the image, the following location was revealed: **-33.941739, 18.855617**, (image below)
 
+<img src='images/graffiti_2.jpg' width="300px">
 
-Looking at the EXIF data in the image, the following location was revealed:
+The same ammo box was found and opened with the same code 'TTTT_'. The box contained tape, stickers and instructions to create 2 'Osiris' logos in Stellenbosch.
 
--33.941739, 18.855617
+<img src='images/graffiti_3.jpg' margin="5"> <img src='images/graffiti_4.jpg'> <img src='images/graffiti_5.jpg'>
 
-<img src='images/graffiti_2.jpg'>
-
-
-
-The same ammo box was found and opened with the same code 'TTTT_'
-
-<img src='images/graffiti_3.jpg'>
-
-<img src='images/graffiti_4.jpg'>
-
-The box contained tape, stickers and instructions to create 2 'Osiris' logos in Stellenbosch.
-
-<img src='images/graffiti_5.jpg'>
-
-Once all teams had found the box and placed logos in Stellenbosch Osiris revealed the code via Whatsapp: '**wouldyoukindly**'
-
-
-
+Once all teams had found the box and placed logos in Stellenbosch Osiris revealed the code via Whatsapp: '**wouldyoukindly**'. This concluded the team-based challenge.
 
 
 <!-- MORE -->
