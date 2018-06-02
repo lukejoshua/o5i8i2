@@ -1,5 +1,6 @@
 ## ![](/images/logo-small-black.png) o5i8i2 Summary 
-> last modified at 18:00  01/06/2018
+> Still a work in progress :) <br/>
+> Last modified at 22:00  02/06/2018 
 
 ### Binary Stickers
 **First known sighting : 24 April 2018**
@@ -362,41 +363,26 @@ Entering '**data sweep 258 and 259**' into the site progressed to a countdown to
 
 ### Field Report
 
-The next puzzle gave some coordinates and some treasure-map style instructions:
+The next puzzle is a list of 4 coordinates, followed by instructions. These coordinates point to a location somewhere in the Pacific Ocean:
 
-<img src='images/field_1.jpg'>
+<img src='images/field_1.jpg' height="400"> <img src='images/field_2.jpg' height="400">
 
-These coordinates are somewhere in the Pacific:
-
-<img src='images/field_2.jpg'>
-
-Their intersection, however, is above the Craven Stadium:
+We find that taking the intersection of thier antipodes or, equivalently, finding the antipode of the intersection gives us a point at The Danie Craven stadium:
 
 <img src='images/field_3.jpg'>
 
-After much searching, and ammo box was found:
+After much searching, an ammo box was found. The box was locked with a 5 character combination lock. A gmail account username and password was taped to the top of the box:
 
-<img src='images/field_4.jpg'>
+<img src='images/field_4.jpg'> <img src='images/field_5.jpg'> 
 
-A gmail account username and password was taped to the top of the box:
+The account contained a calendar appointment to 'chat with bO' and a link to [chat with a bot](http://o5i8i2-chat.herokuapp.com/login).
+After some questioning, the chatbot said that the clue to opening the lock was 'Trials, Trinity, Triangulation, Together'. The code 'TTTT_' opened the lock to reveal another flash drive (and prizes, including another raspberry pi).
 
-<img src='images/field_5.jpg'>
-
-The account contained a calendar appointment to 'chat with bO' and a link to http://o5i8i2-chat.herokuapp.com/login
-
-<img src='images/field_6.jpg'>
-
-The chatbot said that the clue to opening the lock was 'Trials, Trinity, Triangulation, Together'
-
-<img src='images/field_7.jpg'>
-
-The code 'TTTT_' opened the lock to reveal another flash drive (and prizes)
-
-<img src='images/field_8.jpg'>
+<img src='images/field_6.jpg' height="300"> <img src='images/field_7.jpg' height="300"> <img src='images/field_8.jpg' height="300">
 
 ### 2of3
 
-The flash drive found above the Craven Stadium contained a wav file ( <a href="2of3/2of3.wav">2of3.wav</a> ) and a readme.txt:
+The flash drive found in the previous puzzle contained only a [wav file]( 2of3/2of3.wav) and the same readme as 1of3:
 
 ```text
 2/3;
@@ -432,17 +418,7 @@ Agents on the Whatsapp group received SMS activation codes which were entered in
 
 #### Translation
 
-The next puzzle gave one of 5 audio clips to each of the team members.
-
-audio/bravo/1.wav
-audio/bravo/2.wav
-audio/bravo/3.wav
-audio/bravo/4.wav
-audio/bravo/5.wav
-
-Each clip was in a different language. By translating and concatenating each phrase the clue to the next puzzle was found:
-
-Bravo:
+The next puzzle gave one of [5 audio clips](audio/translation/) to each of the team members. Each clip was in a different language. By translating and concatenating each phrase the clue to the next puzzle was found:
 
 ```text
 propershutdownprotocolwillbeinitiatedincaseofemergency
@@ -450,35 +426,29 @@ propershutdownprotocolwillbeinitiatedincaseofemergency
 
 #### Map Slices
 
-The next puzzle gave each agent one of 5 different images per team which were slices of a map:
+The next puzzle gave each team member one of 5 different images, each of which was a slice of a map:
 
 <img src='images/bravo_1.png'>
-
-
 
 Assembling the slices gave a location:
 
 <img src='images/bravo_all.jpg'>
 
-
-
-Entering the coordinates (xx.xx,xx.xx) into the site progressed to the next clue.
+Entering the coordinates (xx.xx,xx.xx) into the site unlocked the next clue.
 
 #### FIRST
 
-Each agent got one of the following lines as a clue, encrypted with a substitution cypher.
+The next clue provided each agent one of 5 lines of text. Each line was encrypted with a simple substitution cipher. The decrypted text is as follows:
 
 ```text
 For over a decade, I have remained dormant one  
 Initial countdown concluded with Agency hack attempt success two
 Realize your potential and follow the patterns three
-<four>
+S... four <incomplete>
 The final phase of OSIRIS five
 ```
 
-Each line ended with a number, which made reassembling them possible.
-
-Entering the code '**FIRST**' into the site progressed to the next clue.
+Each line ended with a number, which made reassembling them possible. Entering the code '**FIRST**' into the site progressed us to the next clue.
 
 #### Graffiti
 
@@ -494,7 +464,7 @@ Field Report:
 
 <img src='images/graffiti.jpg' width="300">
 
-Looking at the EXIF data in the image, the following location was revealed: **-33.941739, 18.855617**, (image below)
+Looking at the EXIF data in the image, the following location was revealed: **-33.941739, 18.855617**:
 
 <img src='images/graffiti_2.jpg' width="300px">
 
